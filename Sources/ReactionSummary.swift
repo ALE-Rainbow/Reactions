@@ -137,7 +137,7 @@ public final class ReactionSummary: UIReactionControl {
     switch config.alignment {
     case .left, .centerLeft:
       textLabel.lineBreakMode = .byTruncatingTail
-    case .right, .centerRight:
+    case .right, .centerRight, .rightTextRight:
       textLabel.lineBreakMode = .byTruncatingHead
     }
   }
@@ -159,6 +159,9 @@ public final class ReactionSummary: UIReactionControl {
     case .right:
       summaryLayerX = bounds.width - summaryLayerSize.width
       textLabelX    = bounds.width - summaryLayerSize.width - config.spacing - textLabelWidth
+    case .rightTextRight:
+      summaryLayerX = bounds.width - summaryLayerSize.width - config.spacing - textLabelWidth
+      textLabelX    = bounds.width - textLabelWidth
     case .centerLeft:
       summaryLayerX = margin
       textLabelX    = margin + textLabelWidth + config.spacing
