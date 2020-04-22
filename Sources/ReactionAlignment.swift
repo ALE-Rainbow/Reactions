@@ -32,6 +32,8 @@ public enum ReactionAlignment {
   case left
   /// Text and icon are visually right aligned. The icon is to the right of text.
   case right
+  /// Text and icon are visually right aligned. The icon is to the left of text (only for ReactionSummary).
+  case rightTextRight
   /// Text and icon are visually center aligned. The icon is to the left of text.
   case centerLeft
   /// Text and icon are visually center aligned. The icon is to the right of text.

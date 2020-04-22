@@ -114,7 +114,7 @@ final class CAReactionSummaryLayer: CALayer {
     switch config.alignment {
     case .left, .centerLeft:
       textFrame.origin.x += iconFrame.width
-    case .right, .centerRight:
+    case .right, .centerRight, .rightTextRight:
       textFrame.origin.x = bounds.width - textFrame.origin.x - rect.width
       iconFrame.origin.x = bounds.width - iconFrame.origin.x - rect.width + textFrame.width
     }
