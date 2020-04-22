@@ -142,7 +142,7 @@ final class CAReactionSummaryLayer: CALayer {
     let iconHeight = bounds.height - config.iconMarging * 2
 
     guard !config.isAggregated else {
-      return CGRect(x: (iconHeight - 3) * CGFloat(index), y: config.iconMarging, width: iconHeight, height: iconHeight)
+      return CGRect(x: (iconHeight + 1) * CGFloat(index), y: config.iconMarging, width: iconHeight, height: iconHeight)
     }
 
     let previousReactionFrame = reactionFrameAt(index - 1)
